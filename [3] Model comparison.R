@@ -1,3 +1,5 @@
+# Load Controlv1 by '[1] Load dataset.R' file
+# Load model3a by '[2] Develop a model of parasitaemia.R' file
 # Load required packages
 library(pacman)
 p_load(tidyverse, lme4, ggplot2, sjPlot)
