@@ -1,8 +1,8 @@
 ### MGH Dissertation 2021/2022
 
-This is the public repository for MGH Dissertation 2021/2022, "Using modelled parasitaemia in a rodent malaria infection to elucidate possible host-pathogen interaction"
-The data used in the study is available without the blood level of lactate. 
-The code files used in the study are available. Please run the code file in order to prevent any disruption. 
+- This is the public repository for MGH Dissertation 2021/2022, "Using modelled parasitaemia in a rodent malaria infection to elucidate possible host-pathogen interaction"
+- The data used in the study is available without the blood level of lactate. 
+- The code files used in the study are available. Please run the code file in order to prevent any disruption. 
 
 <!--
 **MGH-Dissertation/MGH-Dissertation** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
