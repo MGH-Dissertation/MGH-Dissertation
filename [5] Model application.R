@@ -1,3 +1,5 @@
+# Load HCT and ELISA by '[1] Load dataset.R' file
+# Load model3a by '[2] Develop a model of parasitaemia.R' file
 # Load required packages
 library(pacman)
 p_load(tidyverse, readxl, writexl, lme4, ggplot2, ggpubr)
@@ -37,6 +39,7 @@ ELISA_Slope_control %>%
 
 ############################################################################################################################################
 ### Do not run - this block of code generates correlations between blood level of lactate and parasite growth rate - Table 3 - data is confidential ###
+# Assuming that lactate data was loaded succefully and was converted to the dataset suitable for correlation analysis (Check the section of '# Dataframe for correlation analysis' above)
 Lactate_Slope_control %>%
   ggscatter(y = "Lactate.Log", x = "Time", add = "reg.line", 
             conf.int = TRUE, cor.coef = TRUE, cor.method = "pearson",
