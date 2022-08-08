@@ -14,7 +14,7 @@ HCT_Slope_control= full_join(slope_control, HCT, by = c("Mouse")) %>% drop_na()
 ELISA_Slope_control = full_join(slope_control, ELISA, by = c("Mouse")) %>%
   mutate(Measurements = log(Measurements))
 
-# Correlation analysis between HCT and parasite growth rate - Table 3
+# Correlation analysis between HCT and parasite growth rate - Table 4
 HCT_Slope_control %>%
   filter(Day == 7) %>%
   ggscatter(y = "HCT", x = "Time", add = "reg.line", 
@@ -25,7 +25,7 @@ HCT_Slope_control %>%
         plot.title = element_text(face = "bold"))+
   theme_bw() 
 
-# Correlation analysis between ELISA markers and parasite growth rate - Table 3
+# Correlation analysis between ELISA markers and parasite growth rate - Table 4
 ELISA_Slope_control %>%
   filter(Day == 7) %>%
   ggscatter(y = "Measurements", x = "Time", add = "reg.line", 
@@ -38,7 +38,7 @@ ELISA_Slope_control %>%
   facet_wrap(~ELISA, scales = "free_y")
 
 ############################################################################################################################################
-### Do not run - this block of code generates correlations between blood level of lactate and parasite growth rate - Table 3 - data is confidential ###
+### Do not run - this block of code generates correlations between blood level of lactate and parasite growth rate - Table 4 - data is confidential ###
 # Assuming that lactate data was loaded succefully and was converted to the dataset suitable for correlation analysis (Check the section of '# Dataframe for correlation analysis' above)
 Lactate_Slope_control %>%
   ggscatter(y = "Lactate.Log", x = "Time", add = "reg.line", 
